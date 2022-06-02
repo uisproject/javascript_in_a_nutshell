@@ -130,6 +130,7 @@ const array1 = [5, 12, 8, 130, 44];
 
 // Array.prototype.forEach()
 // The forEach() method executes a provided function once for each array element.
+// the difference with map is this will not return a new array so this can be used to mutate the array
 // const array1 = ["a", "b", "c"];
 // array1.forEach((item, index, array) => {
 //   console.log(item);
