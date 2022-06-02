@@ -14,6 +14,7 @@
 // --
 // Array.from()
 // The Array.from() static method creates a new, shallow-copied Array instance from an array-like or iterable object.
+// so the real purpose of this to take non-array (arraylike) to set them like array
 // console.log(Array.from("foo"));
 // console.log(Array.from([1, 2, 3], (x) => x + x));
 // so i just know this and this is awesome, this takes 2 params : the array,string, set, map, or even nodeList in HTML and second is the map fn remember that we can use any logic within the map function so basically it's similar to map fn, but it's really good when you want to separate the string into arrays, because you can't do that with map
