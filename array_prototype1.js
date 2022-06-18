@@ -1,6 +1,6 @@
 // Agenda
 
-// at()         || string
+// at()         || any
 // concat()     || array
 // entries()    || array
 // every()      || boolean
@@ -15,8 +15,19 @@
 // The at() method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.
 
 // so the interesting part we usually use something like colors[0] or when we get the last we would do this color[color.length-1] but this thing make things easier just simply say -1 if you want to get the last on, similar when you use char.at()
-// const colors = ["red", "green", "blue"];
-// console.log(colors.at(-1)); //this will get the last index
+const colors = ["red", "green", "blue"];
+const test = [
+  {
+    id: 1,
+    name: "lala",
+  },
+  {
+    id: 2,
+    name: "haha",
+  },
+];
+console.log(test.at(0)); // return the first index data
+console.log(colors.at(-1)); //this will get the last index
 
 // --
 
