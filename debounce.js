@@ -5,16 +5,24 @@
 // for example, if you want to call sayHi() every second
 // but you don't want to call it more than once every second
 
-const debounce = (fn, delay) => {
+// const debounce = (fn, delay) => {
+//   let timer;
+//   return (() => {
+//     clearTimeout(timer);
+//     timer = setTimeout(() => fn(), delay);
+//   })();
+// };
+
+// i think this is the best way to do it and more readable
+const debounce2 = (fn, delay) => {
   let timer;
-  return (() => {
-    clearTimeout(timer);
-    timer = setTimeout(() => fn(), delay);
-  })();
+  clearTimeout(timer);
+  timer = setTimeout(() => fn(), delay);
 };
 
 const sayHi = () => {
   console.log("hi");
 };
 
-debounce(sayHi, 1000);
+// debounce(sayHi, 1000);
+debounce2(sayHi, 1000);
