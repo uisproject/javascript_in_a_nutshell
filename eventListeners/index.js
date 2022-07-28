@@ -39,20 +39,29 @@
 // stop propagation means it will stop the event from bubbling up to the parent.
 
 // Event Delegation
-const addGlobalEventListener = (event, selector, callback) => {
-  document.addEventListener(event, (e) => {
-    if (e.target.matches(selector)) {
-      callback(e);
-    }
-  });
-};
+// const addGlobalEventListener = (event, selector, callback) => {
+//   document.addEventListener(event, (e) => {
+//     if (e.target.matches(selector)) {
+//       callback(e);
+//     }
+//   });
+// };
 
-addGlobalEventListener("click", "div", (e) => {
-  console.log("hi");
-});
+// addGlobalEventListener("click", "div", (e) => {
+//   console.log("hi");
+// });
 
-const newDiv = document.createElement("div");
-newDiv.style.width = "200px";
-newDiv.style.height = "200px";
-newDiv.style.backgroundColor = "purple";
-document.body.append(newDiv);
+// const newDiv = document.createElement("div");
+// newDiv.style.width = "200px";
+// newDiv.style.height = "200px";
+// newDiv.style.backgroundColor = "purple";
+// document.body.append(newDiv);
+
+// const divs = document.querySelectorAll("div");
+
+// divs.forEach((div) => {
+//   div.addEventListener("click", (event) => {
+//     event.stopPropagation();
+//     console.log(event.currentTarget);
+//   });
+// });
