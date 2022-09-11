@@ -20,9 +20,9 @@ const debounce2 = (fn, delay) => {
   timer = setTimeout(() => fn(), delay);
 };
 
-const sayHi = () => {
-  console.log("hi");
+const sayHi = (times) => {
+  console.log("hi" + times);
 };
 
 // debounce(sayHi, 1000);
-debounce2(sayHi, 1000);
+debounce2(() => sayHi(2), 1000);
