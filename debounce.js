@@ -17,7 +17,7 @@
 const debounce2 = (fn, delay) => {
   let timer;
   clearTimeout(timer);
-  timer = setTimeout(() => fn(), delay);
+  return (timer = setTimeout(fn, delay));
 };
 
 const sayHi = (times) => {
